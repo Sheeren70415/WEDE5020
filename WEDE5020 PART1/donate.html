@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Donate | NSPCA</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<p> <img src="NSPCA donate.png" alt="NSPCA"></p>
+<hr size="6" color="pink"
+
+<body>
+
+
+<div class="top-bar">
+
+<div class="container">
+
+<span>National Council of SPCAs • South Africa</span>
+
+<span>Animal Welfare • Compassion • Action</span>
+
+</div>
+
+</div>
+
+
+<header>
+
+<nav class="navbar container">
+
+<a href="index.html" class="logo">
+
+<span class="logo-icon">🐾</span>
+
+<span>
+<strong>NSPCA</strong>
+<small>Protecting Animals</small>
+</span>
+
+</a>
+
+
+<button class="menu-button"
+onclick="toggleMenu()">☰</button>
+
+
+<div class="nav-links" id="navLinks">
+
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="what-we-do.html">What We Do</a>
+<a href="report.html">Report Cruelty</a>
+<a href="donate.html">Donate</a>
+<a href="projects.html">Projects</a>
+<a href="news.html">News</a>
+<a href="get-involved.html">Get Involved</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<section class="page-header">
+
+<div class="container">
+
+<h1>Support Animal Welfare</h1>
+
+<p>
+Your support can help the NSPCA prevent cruelty
+and promote animal welfare.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="card-grid">
+
+
+<div class="card">
+
+<div class="card-icon">❤️</div>
+
+<h3>R100</h3>
+
+<p>Monthly support.</p>
+
+<button
+class="button button-outline"
+onclick="selectDonation(100)">
+
+Choose R100
+
+</button>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">❤️</div>
+
+<h3>R250</h3>
+
+<p>Monthly support.</p>
+
+<button
+class="button button-outline"
+onclick="selectDonation(250)">
+
+Choose R250
+
+</button>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">❤️</div>
+
+<h3>R500</h3>
+
+<p>One-off support.</p>
+
+<button
+class="button button-outline"
+onclick="selectDonation(500)">
+
+Choose R500
+
+</button>
+
+</div>
+
+</div>
+
+
+<br><br>
+
+
+<div class="form-card">
+
+<h2>Donation Details</h2>
+
+
+<form class="demo-form">
+
+
+<label>
+Donation Amount
+</label>
+
+<input
+id="donationAmount"
+type="number"
+placeholder="Enter amount"
+required>
+
+
+<label>
+Full Name
+</label>
+
+<input
+type="text"
+required
+placeholder="Enter your name">
+
+
+<label>
+Email Address
+</label>
+
+<input
+type="email"
+required
+placeholder="Enter your email">
+
+
+<label>
+Donation Frequency
+</label>
+
+<select>
+
+<option>One-off</option>
+
+<option>Monthly</option>
+
+</select>
+
+
+<button
+type="submit"
+class="button button-primary">
+
+Continue
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="container">
+
+<h3>NSPCA</h3>
+
+<p>
+Preventing cruelty and promoting animal welfare.
+</p>
+
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+
+function selectDonation(amount) {
+
+document.getElementById("donationAmount").value = amount;
+
+}
+
+</script>
+
+</body>
+
+</html>
